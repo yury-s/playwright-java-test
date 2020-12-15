@@ -20,7 +20,7 @@ import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
 
-public class Demo {
+public class PageScreenshot {
   public static void main(String[] args) throws Exception {
     Playwright playwright = Playwright.create();
     List<BrowserType> browserTypes = Arrays.asList(
