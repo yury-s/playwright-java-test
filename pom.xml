@@ -15,8 +15,7 @@
     <properties>
         <compiler.version>1.8</compiler.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <playwright.version>0.170.2</playwright.version>
-        <junit.version>5.7.0</junit.version>
+        <playwright.version>0.162.2</playwright.version>
     </properties>
 
     <build>
@@ -37,11 +36,6 @@
         </plugins>
     </build>
     <dependencies>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit.version}</version>
-        </dependency>
         <dependency>
             <groupId>com.microsoft.playwright</groupId>
             <artifactId>playwright</artifactId>
