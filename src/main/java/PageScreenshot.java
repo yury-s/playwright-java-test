@@ -29,8 +29,7 @@ public class PageScreenshot {
         playwright.firefox()
     );
     for (BrowserType browserType : browserTypes) {
-      Browser browser = browserType.launch(
-          new BrowserType.LaunchOptions().withHeadless(false));
+      Browser browser = browserType.launch();
       BrowserContext context = browser.newContext(
           new Browser.NewContextOptions().withViewport(800, 600));
       Page page = context.newPage();

@@ -22,7 +22,7 @@ public class MobileAndGeolocation {
   public static void main(String[] args) throws Exception {
     Playwright playwright = Playwright.create();
     BrowserType browserType = playwright.chromium();
-    Browser browser = browserType.launch(new BrowserType.LaunchOptions().withHeadless(false));
+    Browser browser = browserType.launch();
     DeviceDescriptor pixel2 = playwright.devices().get("Pixel 2");
     BrowserContext context = browser.newContext(new Browser.NewContextOptions()
         .withViewport(pixel2.viewport().width(), pixel2.viewport().height())

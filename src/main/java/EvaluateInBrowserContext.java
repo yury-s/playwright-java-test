@@ -20,7 +20,7 @@ public class EvaluateInBrowserContext {
   public static void main(String[] args) throws Exception {
     Playwright playwright = Playwright.create();
     BrowserType browserType = playwright.firefox();
-    Browser browser = browserType.launch(new BrowserType.LaunchOptions().withHeadless(false));
+    Browser browser = browserType.launch();
     BrowserContext context = browser.newContext();
     Page page = context.newPage();
     page.navigate("https://www.example.com/");
